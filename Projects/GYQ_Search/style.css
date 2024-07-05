@@ -3,6 +3,16 @@ html,body{
     margin: 0;
 }
 
+header a {
+    color:white;
+    text-decoration: none;
+}
+
+header a:hover {
+    color:white;
+    text-decoration: underline;
+}
+
 #google {
     background-color: #202124;
     color:white;
