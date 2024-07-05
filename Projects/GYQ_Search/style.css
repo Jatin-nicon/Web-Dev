@@ -1,2 +1,80 @@
-body{background-color: black ;
-    color: white}
+html,body{
+    padding: 0;
+    margin: 0;
+}
+
+#google {
+    background-color: #202124;
+    color:white;
+    height: 768px;
+}
+
+div[id="google"] header {
+    height:5px;
+}
+
+div[id="google"] header ul li {
+    display:inline;
+    padding: 7px;
+}
+
+div[id="google"] header ul li div {
+    background-color: white;
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    display: inline-block;
+}
+
+div[id="google"] h1 {
+    font-family: sans-serif;
+    text-align: center;
+    padding-top:20px;
+    font-size: 90px;
+    font-weight: 530;
+    letter-spacing: 0.5;
+}
+
+div[id="google"] header ul {
+    text-align: right;
+    margin-top: 0px;
+    
+}
+
+div[id="google"] form div {
+    text-align: center;
+}
+
+div[id="google"] form div input {
+    background-color: #202124;
+    border-color: white;
+    width:600px;
+    height: 40px;
+    border-radius: 30px;
+    color:white;
+    font-size: 15px;
+    padding-left:40px;
+    margin-bottom: 30px;
+}
+
+div[id="google"] input:hover {
+    background-color: #2e3033;
+}
+
+div[id="google"] button {
+    margin: 2px;
+    background-color: #36393b;
+    color:white;
+    border: none;
+    height:30px;
+    border-radius: 5px;
+    font-size: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+div[id="google"] button:hover {
+    border-color: white;
+    border-width: 0.05px;
+    border-style: solid;
+}
