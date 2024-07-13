@@ -78,6 +78,7 @@ input:hover {
 .input input:focus {
     background-color: #303134;
     border: none;
+    outline: none;
     box-shadow: 1px 1px 2px black;
 
 }
