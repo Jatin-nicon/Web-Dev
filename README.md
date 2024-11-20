@@ -6,4 +6,4 @@ Here the list below is all my projects till now.
 <br>
 <a href="https://jatin-nicon.github.io/Web-Dev-Projects/Spotify Clone">Open Spotify Clone</a>
 <br>
-<a href="https://jatin-nicon.github.io/Web-Dev-Projects/Simon_says_game">Open Spotify Clone</a>
+<a href="https://jatin-nicon.github.io/Web-Dev-Projects/Simon_says_game">Play Simon Says Game</a>
