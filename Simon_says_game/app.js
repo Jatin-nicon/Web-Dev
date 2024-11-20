@@ -30,7 +30,7 @@ function btnFlash(btn) {
     btn.classList.add('flash');
     setTimeout(function () {
         btn.classList.remove('flash');
-    }, 150);
+    }, 300);
 };
 
 function levelUp() {
@@ -63,7 +63,7 @@ function buttonPress() {
     btn.classList.add('userFlash');
     setTimeout(function () {
         btn.classList.remove('userFlash');
-    }, 150);
+    }, 300);
     
     userSeq.push(this.classList[1]);
     let isContinue = arrayMatch(userSeq, gameSeq);
@@ -73,7 +73,7 @@ function buttonPress() {
 
     if (userSeq.length === gameSeq.length && isContinue) {
         userSeq = [];
-        setTimeout(levelUp, 300);
+        setTimeout(levelUp, 700);
     }
 };
 
