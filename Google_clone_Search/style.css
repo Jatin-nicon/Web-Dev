@@ -1,0 +1,134 @@
+body {
+    color:white;
+    background-color: #202124;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    flex-direction:row-reverse;
+}
+
+header span, header a {
+    color:white;
+    margin: 0px 10px 0px 0px;
+    text-decoration: none;
+}
+
+header a {
+    font-size: 12px;
+    font-weight:600;
+    margin: 15px 10px 0px 0px;
+    font-weight: 300;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+header button {
+    background-color: #c2e7ff;
+    border: none;
+    width: 85px;
+    height: 40px;
+    border-radius: 90px;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+
+
+h1 {
+    margin: 70px 0px 20px 0px;
+    text-align: center;
+    font-size: 90px;
+    font-weight: 450;
+    letter-spacing: 0.5;
+}
+
+form div {
+    text-align: center;
+}
+
+.input {
+    height: 40px;
+}
+
+.input input {
+    background-color: #202124;
+    border-color: white;
+    box-shadow: 0.01px 0.1px 0px white;
+    border-radius: 40px;
+    width:70%;
+    max-width: 600px;
+    height: 40px;
+    color:white;
+    font-size: 15px;
+    padding-left:40px;
+    margin-bottom: 30px;
+}
+
+input:hover {
+    background-color: #303134;
+    border: none;
+    box-shadow: 1px 1px 2px black;
+}
+
+.input input:focus {
+    background-color: #303134;
+    border: none;
+    outline: none;
+    box-shadow: 1px 1px 2px black;
+
+}
+
+main button {
+    margin: 2px;
+    background-color: #303134;
+    color:white;
+    border: none;
+    height:35px;
+    border-radius: 5px;
+    font-size: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+main button:hover {
+    border-color: white;
+    border-width: 0.05px;
+    border-style: solid;
+}
+
+
+
+footer{
+    width: 100%;
+    margin-top: 34%;
+}
+
+footer div {
+    background-color: #171717;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    font-size: 15px;
+    font-weight: 300;
+    margin-top: 1.5px;
+}
+
+footer div div {
+    display:inline-block;
+    margin: 10px;
+}
+
+footer div div a {
+    color: white;
+    text-decoration: none;
+    margin: 0px 5px;
+}
+
+footer div div a:hover {
+    text-decoration: underline;
+}
