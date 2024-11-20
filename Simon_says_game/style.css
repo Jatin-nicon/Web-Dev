@@ -1,0 +1,93 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Eater&family=Exo:ital,wght@0,100..900;1,100..900&family=SUSE:wght@100..800&display=swap');
+
+
+body {
+    text-align: center;
+    background-color: rgb(35, 34, 34);
+    color: #fff;
+    
+}
+
+
+h1 {
+    font-size: 3em;
+    color: #61dafb;
+    margin: 20px 0;
+    text-shadow: 2px 2px 5px #000;
+    font-family: "Eater", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h3 {
+    font-size: 1.2em;
+    color: #ddd;
+    margin-bottom: 20px;
+}
+
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.inb {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 2rem;
+    border: 0.2rem black solid ;
+    transition: transform 0.1s ease-in-out;
+    margin: 1rem;
+}
+
+
+.green {
+    background-color: rgb(0, 255, 0);
+}
+
+.red {
+    background-color: red;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.blue {
+    background-color: blue;
+}
+
+
+.flash {
+    background-color: white;
+}
+
+
+.userFlash {
+    background-color: antiquewhite;
+}
+
+
+.gameOver {
+    background-color: red;
+}
+
+
+
+
+button {
+    width: 7rem;
+    height: 2.5rem;
+    font-weight: 600;
+    background-color: rgb(0, 255, 229);
+    border: none;
+    border-radius: 5px;
+}
+
+
+.hide {
+    display: none;
+}
