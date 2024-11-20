@@ -91,7 +91,7 @@ button {
     display: none;
 }
 
-@media (max-width:370px) {
+@media (max-width:500px) {
     .inb {
         width: 8rem;
         height: 8rem;
