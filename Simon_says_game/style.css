@@ -39,7 +39,6 @@ h3 {
     height: 12rem;
     border-radius: 2rem;
     border: 0.2rem black solid ;
-    transition: transform 0.1s ease-in-out;
     margin: 1rem;
 }
 
@@ -90,4 +89,14 @@ button {
 
 .hide {
     display: none;
+}
+
+@media (max-width:370px) {
+    .inb {
+        width: 8rem;
+        height: 8rem;
+        border-radius: 1.5rem;
+        border: 0.2rem black solid ;
+        margin: 0.3rem;
+    }
 }
