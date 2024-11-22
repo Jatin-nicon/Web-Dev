@@ -8,6 +8,18 @@ let btns = ['green', 'red', 'yellow', 'blue'];
 let gameSeq = [];
 let userSeq = [];
 
+const clickSound = new Audio();
+clickSound.src = 'Audio/click.mp3';
+
+const gameOverSound = new Audio();
+gameOverSound.src = 'Audio/gameOver.mp3';
+
+const gameStartSound = new Audio();
+gameStartSound.src = 'Audio/gameStart.mp3'
+
+const newClick = new Audio();
+newClick.src = 'Audio/newClick.mp3'
+
 
 
 function arrayMatch(smallArray, largeArray) {
@@ -28,6 +40,7 @@ function arrayMatch(smallArray, largeArray) {
 
 function btnFlash(btn) {
     btn.classList.add('flash');
+    newClick.play();
     setTimeout(function () {
         btn.classList.remove('flash');
     }, 300);
@@ -46,6 +59,7 @@ function levelUp() {
 
 function gameOver() {
     body.classList.add('gameOver')
+    gameOverSound.play()
     setTimeout(function () {
         body.classList.remove('gameOver');
     }, 500);
@@ -70,7 +84,8 @@ function buttonPress() {
     if (!isContinue) {
         gameOver();
     }
-
+    
+    clickSound.play()
     if (userSeq.length === gameSeq.length && isContinue) {
         userSeq = [];
         setTimeout(levelUp, 700);
@@ -78,21 +93,30 @@ function buttonPress() {
 };
 
 function restartGame() {
-    level = 0;
-    gameSeq = [];
-    userSeq = [];
-    h3.innerText = `Level ${level}`;
-    levelUp();
+    gameStartSound.play();
+    
+    setTimeout(() => {
+        level = 0;
+        gameSeq = [];
+        userSeq = [];
+        h3.innerText = `Level ${level}`;
+        levelUp();
+    }, 1000);
+    
     for (let btn of allBtns) {
-        btn.addEventListener('click', buttonPress)
+        btn.addEventListener('click', buttonPress);
     }
 };
 
 function startGame() {
-    userSeq = [];
-    levelUp();
-    btnStart.classList.add('hide');
-    btnRestart.classList.remove('hide');
+    gameStartSound.play();
+    setTimeout(() => {
+        userSeq = [];
+        levelUp();
+        btnStart.classList.add('hide');
+        btnRestart.classList.remove('hide');
+    }, 1000)
+    
     
     for (let btn of allBtns) {
         btn.addEventListener('click', buttonPress)
